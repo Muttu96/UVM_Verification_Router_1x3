@@ -1,0 +1,20 @@
+class src_sequencer extends uvm_sequencer#(src_xtn);
+
+        `uvm_component_utils(src_sequencer)
+
+
+        extern function new(string name = "src_sequencer", uvm_component parent = null);
+        extern function void build_phase(uvm_phase phase);
+
+endclass
+
+
+function src_sequencer :: new(string name, uvm_component parent);
+        super.new(name, parent);
+endfunction:new
+
+
+function void src_sequencer :: build_phase(uvm_phase phase);
+        super.build_phase(phase);
+
+endfunction:build_phase
